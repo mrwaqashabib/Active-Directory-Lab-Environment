@@ -1,0 +1,35 @@
+DORA MODEL WORKS HERE 
+
+① Client Boots
+        │
+        ▼
+📦 DHCPDISCOVER ─────────────► DHCP
+
+② DHCP Offer
+DHCP ◄────────────── 📦 DHCPOFFER
+
+③ Client Accepts
+📦 DHCPREQUEST ─────────────► DHCP
+
+④ DHCP ACK
+DHCP ◄────────────── 📦 DHCPACK
+
+⑤ DNS Query
+📦 filesrv.itlab.local ─────► DNS
+
+⑥ DNS Reply
+DNS ◄────────────── 10.10.50.10
+
+⑦ Domain Join
+📦 Join Request ───────────► AD DS
+
+⑧ Authentication
+📦 Kerberos ───────────────► AD DS
+
+⑨ Group Policy
+📦 GPO Download ───────────► Client
+
+⑩ User Login
+✔ Wallpaper Applied
+✔ Firewall Policy
+✔ Control Panel Blocked
