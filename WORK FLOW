@@ -1,0 +1,34 @@
+Windows Server Installation
+        │
+        ▼
+Hyper-V Configuration
+        │
+        ▼
+Internal Network Configuration
+        │
+        ▼
+Static IP Configuration
+        │
+        ▼
+Local User Administration
+        │
+        ▼
+NTFS Permissions
+        │
+        ▼
+SMB File Sharing
+        │
+        ▼
+Active Directory
+        │
+        ▼
+DNS Configuration
+        │
+        ▼
+DHCP Configuration
+        │
+        ▼
+Group Policy Management
+        │
+        ▼
+Enterprise Windows Domain
