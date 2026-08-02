@@ -1,0 +1,83 @@
+Lab 07 - Group Policy Implementation & Verification
+│
+├── Group Policy Management
+│   ├── Open Group Policy Management Console (GPMC)
+│   │      ➜ Accessed the Group Policy Management Console on the Domain Controller.
+│   │
+│   ├── Verify Organizational Units
+│   │      ➜ Confirmed OU_Staff and OU_Computers were available.
+│   │
+│   └── Verify Domain Structure
+│          ➜ Confirmed the itlab.local domain structure.
+│
+├── User Policy Configuration
+│   ├── Create GPO-Staff-Baseline
+│   │      ➜ Created a baseline Group Policy Object for staff users.
+│   │
+│   ├── Link GPO to OU_Staff
+│   │      ➜ Applied the GPO only to staff users.
+│   │
+│   ├── Restrict Control Panel
+│   │      ➜ Disabled access to Control Panel and PC Settings.
+│   │
+│   ├── Configure Desktop Wallpaper
+│   │      ➜ Applied a standard desktop wallpaper through Group Policy.
+│   │
+│   └── Verify User Policy
+│          ➜ Confirmed the policy settings were configured correctly.
+│
+├── Computer Policy Configuration
+│   ├── Create GPO-Firewall-Baseline
+│   │      ➜ Created a security baseline GPO for computers.
+│   │
+│   ├── Link GPO to OU_Computers
+│   │      ➜ Applied the policy to all domain computers.
+│   │
+│   ├── Configure Windows Firewall
+│   │      ➜ Enabled Windows Defender Firewall for the Domain Profile.
+│   │
+│   └── Verify Firewall Policy
+│          ➜ Confirmed the firewall configuration was successfully applied.
+│
+├── Group Policy Deployment
+│   ├── Update Group Policy
+│   │      ➜ Forced the client to retrieve the latest policies.
+│   │
+│   ├── Generate GPResult Report
+│   │      ➜ Generated a report of applied Group Policies.
+│   │
+│   ├── Generate HTML Report
+│   │      ➜ Exported Group Policy results as an HTML report.
+│   │
+│   └── Verify Applied Policies
+│          ➜ Confirmed user and computer policies were successfully applied.
+│
+├── GPO Conflict Simulation
+│   ├── Create GPO-Staff-Conflict
+│   │      ➜ Created a conflicting Group Policy Object.
+│   │
+│   ├── Enable Enforced Setting
+│   │      ➜ Simulated a Group Policy precedence conflict.
+│   │
+│   ├── Verify Policy Conflict
+│   │      ➜ Identified which Group Policy took precedence.
+│   │
+│   ├── Resolve GPO Conflict
+│   │      ➜ Removed enforcement and restored the intended policy.
+│   │
+│   └── Verify Final Policy
+│          ➜ Confirmed the baseline Group Policy was successfully applied.
+│
+├── Command-Line Verification
+│   ├── gpupdate /force
+│   ├── gpresult /r
+│   └── gpresult /h C:\Temp\GPO_Report.html
+│
+└── Lab Outcome
+    ├── Group Policy Objects successfully created and linked.
+    ├── User and Computer policies successfully deployed.
+    ├── Control Panel restrictions implemented for staff users.
+    ├── Windows Firewall configured through Group Policy.
+    ├── Applied policies verified using gpresult reports.
+    ├── Group Policy conflict successfully simulated and resolved.
+    └── Centralized policy management successfully implemented in the Active Directory environment.
